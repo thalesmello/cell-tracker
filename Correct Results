@@ -1,0 +1,23 @@
+macro "Correct results"
+{
+	for(cell = 0; cell<= 116; cell++)
+	{
+		erase = false;
+		for(slice = 250; slice>=1; slice--)
+		{
+			row = getRow(cell,slice);
+			if(getResult("Area",row)>1000000||getResult("Mean",row)==0) erase = true;
+			if(erase){
+				setResult("Area",row,0);
+				setResult("Mean",row,0);
+				setResult("Circ.",row,0);
+			}
+		}
+	}
+}
+
+function getRow(cell,slice)
+{
+	row = slice + cell*250 -1;
+	return row;
+}

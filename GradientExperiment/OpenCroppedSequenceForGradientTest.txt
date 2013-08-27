@@ -1,0 +1,4 @@
+run("Image Sequence...", "open=[C:\\Documents and Settings\\mellote\\Desktop\\8226S ethd dox 6-12-12\\SE C1 2012-06-12-16-28-59\\merge\\SE C1 2012-06-12-16-28-59_merge_00000.JPG] number=244 starting=1 increment=1 scale=100 file=[] or=[] sort use");
+//setTool("rectangle");
+makeRectangle(300, 602, 756, 412);
+run("Crop");

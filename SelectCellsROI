@@ -1,0 +1,10 @@
+macro "Select Cells [1]"
+{
+roiManager("Select", 0);
+run("Find Maxima...", "noise=50 output=[Point Selection]");
+}
+macro "Select Cells [2]"
+{
+roiManager("Select", 0);
+run("Find Maxima...", "noise=50 output=Count");
+}
